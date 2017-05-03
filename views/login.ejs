@@ -1,0 +1,30 @@
+<%- include('includes/header') %>
+
+<!-- start of background image for login page -->
+<section class="bg-mask">
+
+<div class="container"> 
+      <form method="post" action="/users/login" class="form-signin">
+        <h1 class="form-signin-heading text-center">Login</h1>
+        <br><br>
+        <label class="sr-only">Username</label>
+        <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
+        <br>
+        <label class="sr-only">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+        <p><a class="bb-sign-in-text" href="/users/register">Create New Account</a></p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <%- messages(); %>
+      </form>
+    </div> <!-- /container -->
+
+
+ </section>
+ <!-- end of bg-mask section -->
+
+
+
+
+
+<%- include('includes/footer') %>
+
